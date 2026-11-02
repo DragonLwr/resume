@@ -31,4 +31,17 @@ resume-site/
 
 ## 部署
 
-纯静态，直接拖到 GitHub Pages / Vercel / Cloudflare Pages 即可；也可整站打包上传任意静态托管。
+已部署到 GitHub Pages（公开访问）：
+
+- 线上地址：https://dragonlwr.github.io/resume/
+- 仓库：https://github.com/DragonLwr/resume
+
+更新流程（改完内容后三行命令即可上线，约 30 秒自动重建）：
+
+```bash
+cd resume-site
+git add -A && git commit -m "update: 修改说明"
+git push
+```
+
+纯静态，也可以同时拖到 Vercel / Cloudflare Pages / 任意静态托管。如果不想被搜索引擎收录，可在 `index.html` 的 `<head>` 里加 `<meta name="robots" content="noindex">`。
